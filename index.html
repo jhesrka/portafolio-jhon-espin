@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Goku Kakaroto">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="keywords" content="palabra-clave1, pañabra-clave2, recomiendo máximo 5 palabras clave">
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Iconos  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Jhon Espin</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- EmailJS  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "ahM9uj5Uo1Xkq_PI8",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader flex--container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><img src="assets/img/JHESRKA WEB DEVELOPER png.png" alt="Logo Jhesrka"></a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <img src="assets/img/htmlIcon.png" alt="" class="bx  home__layer home__layer--1" data-speed="-5">
+      <img src="assets/img/jsIcon.png" alt="" class="bx  home__layer home__layer--2" data-speed="-5">
+      <img src="assets/img/cssIcon.png" alt="" class="bx  home__layer home__layer--3" data-speed="-5">
+      <img src="assets/img/jsnodeIcon.png" alt="" class="bx  home__layer home__layer--4" data-speed="6">
+      <img src="assets/img/reactIcon.png" alt="" class="bx  home__layer home__layer--5" data-speed="-2">
+      <img src="assets/img/tailwindIcon.png" alt="" class="bx  home__layer home__layer--6" data-speed="-2">
+      <img src="assets/img/reduxIcon.png" alt="" class="bx  home__layer home__layer--7" data-speed="4">
+      <img src="assets/img/typescsripIcon.png" alt="" class="bx  home__layer home__layer--8" data-speed="-2">
+      <img src="assets/img/gitIcon.png" alt="" class="bx  home__layer home__layer--9" data-speed="6">
+      <img src="assets/img/graphqlIcon.png" alt="" class="bx  home__layer home__layer--10" data-speed="-7">
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets/img/jhesrka-perfil.png" alt="profile photo" title="Tu nombre" />
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/jhon-henrry-espin-s%C3%A1nchez-199981254/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/+593997985449?text=Hola quiero contactarte" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/jhesrka" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="mailto:jhesrka@hotmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Hola, soy Jhon Espin</h1>
+
+          <p class="home__description">
+            Soy desarrollador web, comprometido con crear soluciones innovadoras y mejorar la experiencia digital de los usuarios.
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="assets/img/HOJA DE VIDA JHON ESPIN 29-05-2024.pdf" title="Descargar mi CV" download="CV Jhon Espin" rel="noreferrer nofollow">
+            Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">Acerca de Mí</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          Como desarrollador web, me apasiona crear soluciones digitales que resuelvan problemas reales. Siempre estoy en busca de aprender y aplicar nuevas tecnologías para ofrecer experiencias únicas y efectivas. Mi enfoque es ayudar a las empresas a destacar en el entorno digital, combinando creatividad y funcionalidad en cada proyecto.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.jpg" alt="Laborando como ingeniero"
+              title="Laborando como ingeniero" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador"
+              title="Laborando como diseñador" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo"
+              title="rabajando en equipo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Habilidades</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          Como programador con experiencia en HTML, CSS, JavaScript y React, me especializo en la creación de interfaces de usuario intuitivas y dinámicas. Mi enfoque se centra en desarrollar aplicaciones web eficientes y optimizadas, utilizando las mejores prácticas de desarrollo front-end. Con un sólido dominio de React, puedo construir componentes reutilizables y gestionar el estado de manera efectiva, lo que permite experiencias de usuario fluidas y personalizadas.
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/htmlIcon.png" alt="" class="bx flex--container">
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  Tengo un sólido dominio de HTML, que me permite crear estructuras semánticas y accesibles para las páginas web. Me enfoco en asegurar que el contenido esté bien organizado y optimizado para SEO, facilitando la indexación y mejorando la visibilidad en los motores de búsqueda.
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/cssIcon.png" alt="" class="bx flex--container">
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  Poseo experiencia en CSS, lo que me permite diseñar y maquetar interfaces atractivas y responsivas. Utilizo técnicas avanzadas como Flexbox y Grid para crear layouts fluidos que se adaptan a diferentes dispositivos, mejorando así la experiencia del usuario y la usabilidad de las aplicaciones.
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/jsIcon.png" alt="" class="bx flex--container">
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  Mis conocimientos en JavaScript me permiten implementar interactividad y dinámicas en las páginas web. Soy capaz de manipular el DOM de manera efectiva, creando funciones y eventos que enriquecen la interacción del usuario con las aplicaciones.
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <img src="assets/img/reactIcon.png" alt="" class="bx flex--container">
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  Estoy familiarizado con React, lo que me permite construir interfaces de usuario modernas y eficientes. Utilizo componentes reutilizables para desarrollar aplicaciones escalables, optimizando el rendimiento y la experiencia del usuario mediante la gestión del estado y las propiedades. Además, me gusta mantenerme actualizado con las mejores prácticas y las últimas características de la biblioteca.
+                </p>
+                
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">🧠 Resolución</span>
+            <span class="skills__tag">💬 Comunicación</span>
+            <span class="skills__tag">🔄 Adaptabilidad</span>
+            <span class="skills__tag">🤝 Colaboración</span>
+            <span class="skills__tag">📅 Organización</span>
+            <span class="skills__tag">🎨 Creatividad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Proyectos</h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/funnels.png" alt="project 1" title="Ecommerce Vanilla" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 1</h3>
+              <p class="projects__description">
+                Desarrollé un funnel de ventas optimizado que guía a los usuarios desde el interés inicial hasta la conversión final, mejorando la captación de clientes y aumentando las ventas.
+              </p>
+
+              <div class="projects__buttons">
+                <a href="https://fun.jhesrka.com/" target="_blank">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                </a>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/paginaWeb.png" alt="project 1" title="Consumiendo API Pokemon con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 2</h3>
+              <p class="projects__description">
+                Desarrollé una página informativa para una fundación, destacando su misión, proyectos y formas de apoyo, con un diseño claro y accesible.
+              </p>
+
+              <div class="projects__buttons">
+                <a href="https://pandevidaatucucho.com/" target="_blank">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                </a>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/ecommerce.png" alt="project 1" title="CRUD con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 3</h3>
+              <p class="projects__description">
+                Desarrollé un eCommerce que permite a los usuarios explorar y comprar productos fácilmente, con un diseño intuitivo y funcionalidades de carrito de compras optimizadas.
+              </p>
+
+              <div class="projects__buttons">
+                <a href="https://inkfusion.jhesrka.com/?v=7df67469160f" target="_blank">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                </a>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/paginawebecommerce.png" alt="project 1" title="Aplicación del tiempo con React" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 4</h3>
+              <p class="projects__description">
+                Creé una página web informativa que incluye un eCommerce, proporcionando a los usuarios información sobre la fundación y la posibilidad de explorar y adquirir productos, todo con un diseño claro y fácil de usar.
+              </p>
+
+              <div class="projects__buttons">
+                <a href="https://inmobiliaria593.com/" target="_blank">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                </a>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section">
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Información de contacto</h3>
+          <p class="contact__info-description">
+            Ofrecemos múltiples formas de contacto para atender tus consultas de manera eficiente. Completa el formulario o contáctanos directamente.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/+593997985449?text=Hola quiero contactarte" target="_blank"
+                  rel="noreferrer nofollow">+593 99 798 5449</a>
+              </span>
+            </div>
+
+            <!-- <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:1-234-567-8910" target="_blank" rel="noreferrer nofollow">
+                  +1 123 456 7890
+                </a>
+              </span>
+            </div> -->
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:jhesrka@hotmail.com" target="_blank" rel="noreferrer nofollow">
+                  jhesrka@hotmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Quito, Ecuador. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre/Empresa</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="5" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Jhon Espin</h3>
+        <p class="footer__description">
+          Soy desarrollador web, comprometido con crear soluciones innovadoras y mejorar la experiencia digital de los usuarios.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/JhesrkaWebDeveloper?mibextid=ZbWKwL" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/jhesrkawebdeveloper/profilecard/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <!-- <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-twitter"></i></a>
+          </li> -->
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/jhon-henrry-espin-s%C3%A1nchez-199981254/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+</body>
+
+</html>
