@@ -730,17 +730,20 @@ html {
 	background-color: var(--bg-color-section1);
 	.contact__container {
 		display:flex ;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
 		.contact__info {
-			width: 30%;
+			text-align: center;
+			width: 60%;
 			.contatc__info-data {
 				font-style: normal;
 				display: flex;
 				flex-direction: column;
 				gap: 1rem;
 				padding: 2rem 0;
+				
 			}
 		}
 
@@ -790,7 +793,7 @@ html {
 .footer {
 	background-color: #111;
 	color: #efefef;
-	padding-bottom: 2rem;
+	padding: 1.5rem;
 	.footer__container {
 		gap: 2rem;
 		.footer__info {
@@ -816,15 +819,15 @@ html {
 					margin-top: 2rem;
 					margin-bottom: 0;
 					border-top: 1px solid #222;
-					padding-top: 2rem;
+					padding-top: 1rem;
 				}
 			}
 		}
 	}
 	.footer__copy {
-		text-align: center;
+
 		border-top: 1px solid #222;
-		padding-top: 2rem;
+		padding: 1rem;
 	}
 }
 
@@ -976,7 +979,7 @@ html {
 
 	.contact {
 		.contact__container {
-			grid-template-columns: 0.5fr 1fr;
+			flex-direction: row;
 		}
 	}
 
